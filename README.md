@@ -1,4 +1,3 @@
-Here is updated README content you can use:
 
 ```md
 # Play Store Microservices Platform
