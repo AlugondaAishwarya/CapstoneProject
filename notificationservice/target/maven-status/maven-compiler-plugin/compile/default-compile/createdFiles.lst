@@ -1,0 +1,6 @@
+com\playstore\notificationservice\controller\NotificationController.class
+com\playstore\notificationservice\repository\NotificationRepository.class
+com\playstore\notificationservice\service\NotificationService.class
+com\playstore\notificationservice\dto\NotificationRequest.class
+com\playstore\notificationservice\entity\Notification.class
+com\playstore\notificationservice\NotificationServiceApplication.class

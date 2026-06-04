@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  eureka-server:
+    image: eureka-server
+    build: ./eurekaserver
+    ports:
+      - "8761:8761"
+
+  user-service:
+    image: user-service
+    build: ./userservice
+    ports:
+      - "8081:8081"
+    environment:
+      - EUREKA_SERVER_HOST=eureka-server
+    depends_on:
+      - eureka-server
+
+  app-service:
+    image: app-service
+    build: ./appservice
+    ports:
+      - "8082:8082"
+    environment:
+      - EUREKA_SERVER_HOST=eureka-server
+      - NOTIFICATION_SERVICE_HOST=notification-service
+    depends_on:
+      - eureka-server
+
+  review-service:
+    image: review-service
+    build: ./reviewservice
+    ports:
+      - "8083:8083"
+    environment:
+      - EUREKA_SERVER_HOST=eureka-server
+      - APP_SERVICE_HOST=app-service
+    depends_on:
+      - eureka-server
+
+  notification-service:
+    image: notification-service
+    build: ./notificationservice
+    ports:
+      - "8084:8084"
+    environment:
+      - EUREKA_SERVER_HOST=eureka-server
+    depends_on:
+      - eureka-server
+
+  api-gateway:
+    image: api-gateway
+    build: ./api-gateway
+    ports:
+      - "9090:9090"
+    environment:
+      - EUREKA_SERVER_HOST=eureka-server
+      - USER_SERVICE_HOST=user-service
+      - APP_SERVICE_HOST=app-service
+      - REVIEW_SERVICE_HOST=review-service
+      - NOTIFICATION_SERVICE_HOST=notification-service
+    depends_on:
+      - eureka-server
+      - user-service
+      - app-service
+      - review-service
+      - notification-service
