@@ -1,0 +1,6 @@
+target/
+bin/
+service-logs/
+*.log
+*.mv.db
+*.trace.db
