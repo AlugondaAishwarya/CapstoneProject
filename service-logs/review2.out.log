@@ -1,0 +1,91 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.14)
+
+2026-06-04T15:40:04.138+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] c.p.r.ReviewserviceApplication           : Starting ReviewserviceApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 21112 (C:\Users\alugo\OneDrive\Desktop\playstore\reviewservice\target\reviewservice-0.0.1-SNAPSHOT.jar started by alugo in C:\Users\alugo\OneDrive\Desktop\playstore\reviewservice)
+2026-06-04T15:40:04.161+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] c.p.r.ReviewserviceApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-06-04T15:40:13.706+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-04T15:40:15.179+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1441 ms. Found 1 JPA repository interface.
+2026-06-04T15:40:17.474+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9ac7d697-df1a-38ba-80cf-8033526dee9f
+2026-06-04T15:40:21.531+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2026-06-04T15:40:21.741+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-04T15:40:21.746+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-04T15:40:22.092+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-04T15:40:22.121+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 17288 ms
+2026-06-04T15:40:23.815+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-04T15:40:24.086+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-06-04T15:40:24.305+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-04T15:40:26.055+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-04T15:40:26.153+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-04T15:40:28.239+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/reviewdb user=SA
+2026-06-04T15:40:28.244+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-04T15:40:28.379+05:30  WARN 21112 --- [REVIEW-SERVICE] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-04T15:40:28.526+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-04T15:40:34.769+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-04T15:40:35.096+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04T15:40:41.292+05:30  WARN 21112 --- [REVIEW-SERVICE] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-04T15:40:42.410+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-06-04T15:40:43.711+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'APP-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2026-06-04T15:40:44.525+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-06-04T15:40:48.679+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/reviewdb'
+2026-06-04T15:40:51.363+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-06-04T15:40:51.459+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-04T15:40:51.558+05:30  WARN 21112 --- [REVIEW-SERVICE] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-04T15:40:51.745+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-04T15:40:51.882+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-04T15:40:51.900+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-04T15:40:51.940+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-04T15:40:51.943+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-04T15:40:51.943+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-04T15:40:51.944+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-04T15:40:51.945+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-04T15:40:51.945+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-04T15:40:51.946+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-04T15:40:57.305+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-04T15:40:57.417+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-04T15:40:57.428+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-04T15:40:57.433+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1780567857432 with initial instances count: 5
+2026-06-04T15:40:57.451+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application REVIEW-SERVICE with eureka with status UP
+2026-06-04T15:40:57.454+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1780567857454, current=UP, previous=STARTING]
+2026-06-04T15:40:57.518+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application REVIEW-SERVICE with eureka with status DOWN
+2026-06-04T15:40:57.520+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1780567857520, current=DOWN, previous=UP]
+2026-06-04T15:40:57.526+05:30  WARN 21112 --- [REVIEW-SERVICE] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-06-04T15:40:57.536+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04T15:40:57.548+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-04T15:40:58.071+05:30  INFO 21112 --- [REVIEW-SERVICE] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW-SERVICE/localhost:REVIEW-SERVICE:8083: registering service...
+2026-06-04T15:40:58.078+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-04T15:40:58.084+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-06-04T15:41:01.118+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-06-04T15:41:03.389+05:30  INFO 21112 --- [REVIEW-SERVICE] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW-SERVICE/localhost:REVIEW-SERVICE:8083 - registration status: 204
+2026-06-04T15:41:07.867+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEW-SERVICE/localhost:REVIEW-SERVICE:8083 - deregister  status: 200
+2026-06-04T15:41:07.871+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-06-04T15:41:07.917+05:30  INFO 21112 --- [REVIEW-SERVICE] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-04T15:41:08.014+05:30 ERROR 21112 --- [REVIEW-SERVICE] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+
